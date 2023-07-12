@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: kangstar96@gmail.com
+    password: lqbbgqxvkduanzvb
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    transport:
+      protocol: smtp
+    debug: true
+    default-encoding: utf-8
+  web:
+    # resources:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/surveinedb
+    username: surveine
+    password: 1q2w3e!@#
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generateddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  # Swagger 관련 설정 (오류 방지를 위한 코드)
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+jwt:
+  secret: GachonUniversity2023KAKAO2023ENTERPRISE2023ACADEMY2023VER02TEAM10KAFEine2018jin2019mo2020gina2020dokyung2019imae2018hanaKakaoLetsGo
